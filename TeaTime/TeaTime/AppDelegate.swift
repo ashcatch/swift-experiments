@@ -47,7 +47,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let timeLeft = Int(self.finishingTime - NSDate.timeIntervalSinceReferenceDate()) + 1
         let minutes = timeLeft / 60
         let seconds = timeLeft % 60
-        self.statusItem.title = "☕️ \(minutes):\(seconds)"
+        self.statusItem.title = String(format: "☕️ %d:%02d", minutes, seconds)
     }
 
     func teaReady(timer: NSTimer)
