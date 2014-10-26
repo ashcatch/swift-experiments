@@ -8,20 +8,32 @@
 
 import Cocoa
 
+let teaTimeSeconds: NSTimeInterval = 3 * 60
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
 
-
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+    func applicationDidFinishLaunching(aNotification: NSNotification)
+    {
+        NSTimer.scheduledTimerWithTimeInterval(teaTimeSeconds,
+                target: self,
+                selector: Selector("teaReady:"),
+                userInfo: nil,
+                repeats: false)
     }
 
-    func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
+    func applicationWillTerminate(aNotification: NSNotification)
+    {
     }
 
+    func teaReady(timer: NSTimer)
+    {
+        let alert = NSAlert();
+        alert.messageText = "Tee ist fertig!"
+        alert.runModal()
+    }
 
 }
 
