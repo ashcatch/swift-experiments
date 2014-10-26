@@ -17,6 +17,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification)
     {
+        NSApplication.sharedApplication().hide(nil)
+
         NSTimer.scheduledTimerWithTimeInterval(teaTimeSeconds,
                 target: self,
                 selector: Selector("teaReady:"),
@@ -30,9 +32,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func teaReady(timer: NSTimer)
     {
+        NSApplication.sharedApplication().activateIgnoringOtherApps(true)
+
         let alert = NSAlert();
         alert.messageText = "Tee ist fertig!"
         alert.runModal()
+
+        NSApplication.sharedApplication().terminate(nil)
     }
 
 }
