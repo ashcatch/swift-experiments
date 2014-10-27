@@ -4,7 +4,7 @@ This is intended to be a collection of small Swift apps I wrote and find
 useful. They might be used by others as examples or maybe somebody finds
 them useful in other ways.
 
-## Tea Time
+## TeaTime
 
 This is a really small timer application. On start, the application hides
 itself (so that it stays out of the way) and shows a three minute countdown
