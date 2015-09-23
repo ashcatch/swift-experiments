@@ -150,6 +150,7 @@
 		D83CAF7119FCF0210062C056 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Rainer Schmid";
 				TargetAttributes = {
@@ -393,6 +394,7 @@
 				D83CAF9519FCF0210062C056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D83CAF9619FCF0210062C056 /* Build configuration list for PBXNativeTarget "TeaTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +403,7 @@
 				D83CAF9819FCF0210062C056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
