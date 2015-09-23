@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
 
     var countDownTimer: NSTimer!
-    var statusItem: NSStatusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1) // -1 is NSVariableStatusItemLength
+    var statusItem: NSStatusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
     var finishingTime: NSTimeInterval = 0
 
     func applicationDidFinishLaunching(aNotification: NSNotification)
